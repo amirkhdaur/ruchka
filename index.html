@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продажа ручки</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="./script.js"></script>
+    <link rel="icon" type="image/x-icon" href="./ruchka.ico">
+</head>
+
+<body data-bs-theme="dark">
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Куплено!</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-flex flex-column align-items-center">
+            <h1 class="mt-5 fs-1">Продажа ручки</h1>
+            <p class="mt-2 fs-4">Сатыбалдин Амир</p>
+
+            <div class="card mt-5" style="width: 18rem;">
+                <img src="./ruchka.png" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Ручка</h5>
+                    <p class="card-text">В наличии: <span id="stock">1</span></p>
+                    <button class="btn btn-primary" id="buy-btn">Купить</button>
+                </div>
+            </div>
+
+            <p class="mt-5 fs-4 text-center">Цель продать ручку<br>
+                Продано: <span id="stock-progress">0</span> из 1</p>
+            <div class="progress mt-2" style="width: 35%" role="progressbar">
+                <div class="progress-bar" style="width: 0%" id="progress-bar"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
